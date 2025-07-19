@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		C74F0BE32D45437300662A3C /* NavigationTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74F0BE22D45437300662A3C /* NavigationTabViewController.swift */; };
+		C74F0C022D455DFB00662A3C /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = C74F0C012D455DFB00662A3C /* Lottie */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		C74F0B8B2D45423F00662A3C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +32,7 @@
 		C74F0B742D45423C00662A3C /* PizzaPlaneta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PizzaPlaneta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C74F0B8A2D45423F00662A3C /* PizzaPlanetaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PizzaPlanetaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C74F0B942D45423F00662A3C /* PizzaPlanetaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PizzaPlanetaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C74F0BE22D45437300662A3C /* NavigationTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTabViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -58,6 +64,21 @@
 			path = PizzaPlanetaUITests;
 			sourceTree = "<group>";
 		};
+		C74F0BA92D45425E00662A3C /* View */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = View;
+			sourceTree = "<group>";
+		};
+		C74F0BAA2D45426800662A3C /* ViewModel */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C74F0C212D48897F00662A3C /* Model */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C74F0C022D455DFB00662A3C /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +110,10 @@
 		C74F0B6B2D45423C00662A3C = {
 			isa = PBXGroup;
 			children = (
+				C74F0C212D48897F00662A3C /* Model */,
+				C74F0BE22D45437300662A3C /* NavigationTabViewController.swift */,
+				C74F0BAA2D45426800662A3C /* ViewModel */,
+				C74F0BA92D45425E00662A3C /* View */,
 				C74F0B762D45423C00662A3C /* PizzaPlaneta */,
 				C74F0B8D2D45423F00662A3C /* PizzaPlanetaTests */,
 				C74F0B972D45423F00662A3C /* PizzaPlanetaUITests */,
@@ -122,9 +148,13 @@
 			);
 			fileSystemSynchronizedGroups = (
 				C74F0B762D45423C00662A3C /* PizzaPlaneta */,
+				C74F0BA92D45425E00662A3C /* View */,
+				C74F0BAA2D45426800662A3C /* ViewModel */,
+				C74F0C212D48897F00662A3C /* Model */,
 			);
 			name = PizzaPlaneta;
 			packageProductDependencies = (
+				C74F0C012D455DFB00662A3C /* Lottie */,
 			);
 			productName = PizzaPlaneta;
 			productReference = C74F0B742D45423C00662A3C /* PizzaPlaneta.app */;
@@ -208,6 +238,9 @@
 			);
 			mainGroup = C74F0B6B2D45423C00662A3C;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				C74F0C002D455DFA00662A3C /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = C74F0B752D45423C00662A3C /* Products */;
 			projectDirPath = "";
@@ -249,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C74F0BE32D45437300662A3C /* NavigationTabViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -569,6 +603,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C74F0C002D455DFA00662A3C /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios?tab=readme-ov-file";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C74F0C012D455DFB00662A3C /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C74F0C002D455DFA00662A3C /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C74F0B6C2D45423C00662A3C /* Project object */;
 }
